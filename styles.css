@@ -97,14 +97,14 @@ a:active {
   gap: 1.25rem;
 }
 
-.F1 {
+.f1 {
   grid-column: 1;
   grid-row-start: 3;
   grid-row-end: 7;
   width: 100%;
 }
 
-.F1 img {
+.f1 img {
   width: 100%;
 }
 
