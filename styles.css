@@ -1,49 +1,41 @@
 body {
   background-image: linear-gradient(
-    rgb(255, 226, 215),
-    rgb(250, 183, 138),
-    rgb(1, 88, 100),
+    rgb(255, 215, 215),
+    rgb(160, 197, 250),
+    rgb(255, 193, 224),
     rgb(1, 16, 36)
   );
   font-family: "neue-haas-grotesk-text", sans-serif;
   font-weight: 400;
   font-style: normal;
-  height: 600vh;
+  height: 220vh;
 }
 
-/* original headern */
 .flex {
-  /*display: flex;
-  position: fixed;
-  justify-content: space-between;
-  gap: 700px;*/
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-main {
-  max-width: 1100px;
-  min-width: 300px;
 }
 
 .space-between {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+}
+
+nav {
+  display: flex;
+  margin-left: 1050px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 20px;
 }
 
 .namn {
-  color: #7bff00;
-  text-shadow: 3px 3px 12px rgb(0, 0, 0);
-  font-style: italic;
+  color: #3100ac;
+  text-shadow: 2px 2px 1px rgb(1, 24, 39);
+  font-style: normal;
+  margin: 20px;
 }
 
 a {
@@ -53,14 +45,14 @@ a {
 /* unvisited link */
 
 a:link {
-  color: black;
+  color: rgb(26, 1, 106);
   text-decoration: none;
   font-weight: bold;
 }
 
 /* visited link */
 a:visited {
-  color: green;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -72,35 +64,116 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: blue;
+  color: rgb(88, 88, 213);
   text-decoration: none;
 }
 
 .headernav {
   display: flex;
   list-style: none;
-  padding: 0;
   font-size: 24px;
-  gap: 50px;
-  flex-direction: row-reverse;
   padding-right: 20px;
+  justify-content: space-between;
 }
 
 .container-grid {
   display: grid;
-  max-width: 1280px;
-  margin: auto;
+  max-width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(60, 48px);
+  grid-template-rows: repeat(20, 48px);
   grid-auto-rows: 48px;
   grid-auto-flow: dense;
   gap: 1.25rem;
 }
 
-.f1 {
+@media (max-width: 550px)
+ {
+  .container-grid {
+    grid-columns: 1;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .card {
+      display: none;
+  }
+
+  .osynlig {
+      display: block;
+  }
+
+.mitt-magasin {
+  background-image: url(bilder/F1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
   grid-column: 1;
   grid-row-start: 3;
-  grid-row-end: 7;
+  grid-row-end: 10;
+}
+
+.lasfrutas {
+  font-family: "Bebas Neue", cursive;
+  font-size: 26px;
+  margin: 37px;
+  grid-column: 1;
+  grid-row-start: 8;
+  grid-row-end: 8;
+}
+
+.vaccinapp {
+  background-image: url(Liten\ iphone.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1.25rem;
+  grid-column: 1;
+  grid-row-start: 12;
+  grid-row-end: 19;
+}
+
+.plastic-lungs {
+  background-image: url(plasticorgans_lungor.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 10px;
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: 12;
+}
+
+.plasticorgans {
+  font-family: "Bebas Neue", cursive;
+  font-size: 26px;
+  margin: 37px;
+  grid-column: 2;
+  grid-row-start: 10;
+  grid-row-end: 10;
+}
+
+.smoove-desk {
+  background-image: url(smoove\ mockup.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1.25rem;
+  grid-column: 2;
+  grid-row-start: 14;
+  grid-row-end: 20;
+}
+
+.abouttext {
+  font-size: 24px;
+  margin-left: 200px;
+  margin: 80px;
+  background-color: rgba(156, 115, 228, 0.292);
+  width: 400px;
+  height: 400px;
+}
+
+/*.f1 {
+  grid-column: 1;
+  grid-row-start: 3;
+  grid-row-end: 9;
   width: 100%;
 }
 
@@ -110,8 +183,8 @@ a:active {
 
 .vaccinapp {
   grid-column: 1;
-  grid-row-start: 8;
-  grid-row-end: 12;
+  grid-row-start: 12;
+  grid-row-end: 18;
   width: 100%;
 }
 
@@ -122,10 +195,7 @@ a:active {
 .plastic-lungs {
   grid-column: 2;
   grid-row-start: 2;
-  grid-row-end: 6;
-}
-
-.plasticorgans img {
+  grid-row-end: 12;
   width: 100%;
 }
 
@@ -133,4 +203,27 @@ a:active {
   grid-column: 2;
   grid-row-start: 10;
   grid-row-end: 14;
+}*/
+
+.sexy img {
+  display: flex;
+  width: 60%;
+  height: 40%;
+}
+
+.sexy {
+  display: flex;
+  margin-top: 80px;
+}
+
+.mums img {
+  display: flex;
+  width: 35%;
+  height: 15%;
+  margin: 2px;
+}
+
+.mums {
+  display: flex;
+  margin-top: 80px;
 }
